@@ -3,9 +3,8 @@
 using namespace std;
 int main()
 {
-    int i, n, max, cnt=0;
+    int i, n, max, h[100],cnt=0;
     cin >> n;
-    int h[n];
 
     for(i=0; i<n; ++i){
         cin >> h[i];
