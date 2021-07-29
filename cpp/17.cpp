@@ -3,9 +3,8 @@
 using namespace std;
 int main()
 {
-    int i, j, sum=0, n, q, a;
+    int i, j, sum=0, n, q, a, res[10];
     cin >> n;
-    int res[n];
 
     for(i=0; i<n; ++i){
         cin >> q >> a;
