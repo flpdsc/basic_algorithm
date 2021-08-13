@@ -23,5 +23,6 @@ int main(void)
             break;
         }
     }
+    free(score);
     return 0;
 }
