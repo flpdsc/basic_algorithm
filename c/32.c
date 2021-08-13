@@ -22,5 +22,6 @@ int main(void)
         printf("%d ", a[i]);
     }
     printf("\n");
+    free(a);
     return 0;
 }
