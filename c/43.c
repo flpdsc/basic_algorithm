@@ -21,7 +21,7 @@ int main(void)
     for(int i=1; i<=n; ++i){
         scanf("%d", &a[i]);
         rt += a[i];
-		if(a[i]>max) max = tmp;
+        if(a[i]>max) max = a[i];
     }
     while(lt<=rt){
         mid = (lt+rt)/2;
