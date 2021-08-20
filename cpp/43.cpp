@@ -17,16 +17,17 @@ int count(int s){
 }
 int main()
 {
-    int m, tmp, lt=1, mid, rt=0, res;
+    int m, tmp, lt=1, mid, rt=0, res, max=-2147000000;
     cin >> n >> m;
     for(int i=1; i<=n; ++i){
         cin >> tmp;
         rt += tmp;
         a.push_back(tmp);
+        if(tmp>max) max = tmp;
     }
     while(lt<=rt){
         mid = (lt+rt)/2;
-        if(count(mid)<=m){
+        if(mid>=max && count(mid)<=m){
             res = mid;
             rt = mid-1;
         } 
