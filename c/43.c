@@ -15,16 +15,17 @@ int count(int s){
 }
 int main(void)
 {
-    int m, lt=1, rt=0, mid, res;
+    int m, lt=1, rt=0, mid, res, max=-2147000000;
     scanf("%d %d", &n, &m);
     a = (int*)malloc(sizeof(int)*(n+1));
     for(int i=1; i<=n; ++i){
         scanf("%d", &a[i]);
         rt += a[i];
+		if(a[i]>max) max = tmp;
     }
     while(lt<=rt){
         mid = (lt+rt)/2;
-        if(count(mid)<=m){
+        if(mid>=max && count(mid)<=m){
             res = mid;
             rt = mid-1;
         }
