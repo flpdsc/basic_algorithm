@@ -36,5 +36,6 @@ int main()
         else lt = mid+1;
     }
     cout << res << endl;
+    delete[] x;
     return 0;
 }
