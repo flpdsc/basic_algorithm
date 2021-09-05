@@ -1,6 +1,5 @@
 //합이 같은 부분집합(DFS)
 #include <iostream>
-#include <vector>
 using namespace std;
 
 int n, a[11], b[11], total=0;
