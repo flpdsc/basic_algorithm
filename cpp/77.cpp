@@ -1,4 +1,4 @@
-// /친구인가? (Union&Find 자료구조)
+//친구인가? (Union&Find 자료구조)
 #include <iostream>
 using namespace std;
 
