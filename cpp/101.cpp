@@ -11,7 +11,7 @@ int main()
     vector<int> dy(m+1);
     for (int i=0; i<n; ++i){
         cin >> s >> t;
-        for(int j=t; j<=m; ++j){
+        for(int j=m; j>=t; --j){
             dy[j] = max(dy[j], dy[j-t]+s);
         }
     }
